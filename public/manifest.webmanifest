@@ -1,0 +1,15 @@
+{
+  "name": "Flouflix",
+  "short_name": "Flouflix",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#101320",
+  "theme_color": "#101320",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
