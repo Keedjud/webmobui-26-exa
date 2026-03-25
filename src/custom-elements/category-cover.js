@@ -1,5 +1,5 @@
 customElements.define("category-cover", class extends HTMLElement {
-    static observedAttributes = ['href', 'name', 'nbmovies']
+    static observedAttributes = ['href', 'id', 'name', 'nbmovies']
 
     connectedCallback() {
         this.render()
@@ -14,7 +14,7 @@ customElements.define("category-cover", class extends HTMLElement {
       <article class="card category-card ">
         <a class="card" href="${this.getAttribute("href")}">
           <div class="card-body">
-            <span class="tag">Catégorie</span>
+            <span class="tag">${this.getAttribute("id")}</span>
             <h3>${this.getAttribute("name")}</h3>
             <p>${this.getAttribute("nbmovies")} film(s)</p>
           </div>
