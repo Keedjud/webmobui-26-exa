@@ -1,13 +1,17 @@
 const API_BASE_URL = 'https://webmobui26-946d68276cc8.herokuapp.com'
 
 async function fetchJson(path) {
-  throw new Error('fetchJson non implémenté')
+  const data = await fetch(`${API_BASE_URL}${path}`).then((response) => response.json())
+  return data
+  // throw new Error('fetchJson non implémenté')
 }
 
 export async function getCategories() {
+  return await fetchJson('/api/categories')
   // GET /api/categories
 }
 
 export async function getMoviesByCategory(categoryId) {
-  // GET /api/categories/:id/movies
+  return await fetchJson(`/api/categories/${id}/movies`)
+  // GET /api/categories/${id}/movies
 }

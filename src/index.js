@@ -1,4 +1,5 @@
 import './custom-elements/movie-footer.js'
+import './custom-elements/category-cover.js'
 
 import './views/view-categories.js'
 import './views/view-category-movies.js'
