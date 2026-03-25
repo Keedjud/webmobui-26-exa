@@ -10,7 +10,7 @@ function router() {
   const parts = hash.split('/')
 
   if (parts[0] == '#home')
-    main.innerHTML = '<view-home>Ceci est la home</view-home>'
+    main.innerHTML = '<view-home><h1>Home</h1></view-home>'
 
   else if (parts[0] == '#categories' && !parts[1])
     main.innerHTML = `<view-categories />`

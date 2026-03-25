@@ -3,9 +3,7 @@ customElements.define('movie-footer', class extends HTMLElement {
     this.innerHTML = `
       <nav class="footer-nav">
         <a href="#home">Accueil</a>
-        <a href="#genres">Genres</a>
-        <a href="#movies">Films</a>
-        <a href="#favorites">Favoris</a>
+        <a href="#categories">Categories</a>
       </nav>
     `
 

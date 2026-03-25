@@ -8,10 +8,6 @@ export async function getCategories() {
   // GET /api/categories
 }
 
-export async function getMovies() {
-  // GET /api/movies
-}
-
 export async function getMoviesByCategory(categoryId) {
   // GET /api/categories/:id/movies
 }
