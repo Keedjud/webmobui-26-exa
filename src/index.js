@@ -1,5 +1,6 @@
 import './custom-elements/movie-footer.js'
 import './custom-elements/category-cover.js'
+import './custom-elements/movie-item.js'
 
 import './views/view-categories.js'
 import './views/view-category-movies.js'
@@ -23,3 +24,5 @@ function router() {
 
 window.addEventListener('hashchange', router)
 router()
+
+navigator.serviceWorker.register('/serviceworker.js')
